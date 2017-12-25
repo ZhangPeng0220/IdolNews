@@ -1,4 +1,4 @@
-package com.idol.idolnews;
+package com.idol.idolnews.Utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

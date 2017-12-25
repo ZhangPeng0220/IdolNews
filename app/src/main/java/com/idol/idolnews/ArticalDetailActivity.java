@@ -18,8 +18,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.idol.idolnews.API.MyService;
-import com.idol.idolnews.entity.StoryContentEntity;
+import com.idol.idolnews.Utils.CacheUtils;
+import com.idol.idolnews.Utils.HtmlUtil;
+import com.idol.idolnews.bean.StoryContentEntity;
 import com.idol.idolnews.loader.GlideImageLoader;
+import com.mvp_base.BaseView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,7 +34,7 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
-public class ArticalDetailActivity extends AppCompatActivity {
+public class ArticalDetailActivity extends AppCompatActivity implements BaseView{
 
 
     @BindView(R.id.detail_bar_image)

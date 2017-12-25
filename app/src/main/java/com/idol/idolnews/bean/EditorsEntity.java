@@ -1,4 +1,4 @@
-package com.idol.idolnews.entity;
+package com.idol.idolnews.bean;
 
 import android.os.Parcel;
 import android.os.Parcelable;

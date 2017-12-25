@@ -1,4 +1,4 @@
-package com.idol.idolnews.entity;
+package com.idol.idolnews.bean;
 
 import java.util.List;
 

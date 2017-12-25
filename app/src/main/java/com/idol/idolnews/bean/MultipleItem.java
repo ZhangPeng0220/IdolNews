@@ -1,10 +1,9 @@
-package com.idol.idolnews;
+package com.idol.idolnews.bean;
 
 import android.util.Log;
 
 import com.chad.library.adapter.base.entity.MultiItemEntity;
-import com.idol.idolnews.entity.StoriesEntity;
-import com.idol.idolnews.entity.ThemeContentListEntity;
+import com.idol.idolnews.Utils.DateUtils;
 
 import java.util.Date;
 

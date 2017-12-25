@@ -1,9 +1,13 @@
-package com.idol.idolnews.entity;
+package com.idol.idolnews.bean;
+
+import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
+import org.greenrobot.greendao.annotation.Id;
 
 /**
  * Created by Administrator on 2017/1/10.
  */
-
+@Entity
 public class TopStoriesEntity  {
     /**
      * title : 商场和很多人家里，竹制家具越来越多（多图）
@@ -17,7 +21,22 @@ public class TopStoriesEntity  {
     private String image;
     private String ga_prefix;
     private int type;
+    @Id
     private int id;
+
+    @Generated(hash = 57242088)
+    public TopStoriesEntity(String title, String image, String ga_prefix, int type,
+            int id) {
+        this.title = title;
+        this.image = image;
+        this.ga_prefix = ga_prefix;
+        this.type = type;
+        this.id = id;
+    }
+
+    @Generated(hash = 666542542)
+    public TopStoriesEntity() {
+    }
 
     public String getTitle() {
         return title;

@@ -1,9 +1,9 @@
 package com.idol.idolnews.API;
 
-import com.idol.idolnews.entity.BeforeDailyEntity;
-import com.idol.idolnews.entity.LatestDailyEntity;
-import com.idol.idolnews.entity.StoryContentEntity;
-import com.idol.idolnews.entity.ThemeContentListEntity;
+import com.idol.idolnews.bean.BeforeDailyEntity;
+import com.idol.idolnews.bean.LatestDailyEntity;
+import com.idol.idolnews.bean.StoryContentEntity;
+import com.idol.idolnews.bean.ThemeContentListEntity;
 
 import retrofit2.http.GET;
 import retrofit2.http.Path;

@@ -1,4 +1,4 @@
-package com.idol.idolnews;
+package com.idol.idolnews.ThemeMvp;
 
 import android.content.Context;
 import android.view.Gravity;
@@ -9,7 +9,9 @@ import android.widget.LinearLayout;
 import com.bumptech.glide.Glide;
 import com.chad.library.adapter.base.BaseMultiItemQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.idol.idolnews.entity.EditorsEntity;
+import com.idol.idolnews.bean.MultipleItem;
+import com.idol.idolnews.R;
+import com.idol.idolnews.bean.EditorsEntity;
 import com.idol.idolnews.loader.GlideImageLoader;
 
 import java.util.List;
@@ -22,7 +24,7 @@ public class MultiThemeAdapter extends BaseMultiItemQuickAdapter<MultipleItem, B
 
     public MultiThemeAdapter(Context context, List<MultipleItem> data){
         super(data);
-        addItemType(MultipleItem.IMG,R.layout.item_story_list_content);
+        addItemType(MultipleItem.IMG, R.layout.item_story_list_content);
         addItemType(MultipleItem.TEXT,R.layout.item_theme_story_list_section);
     }
     @Override

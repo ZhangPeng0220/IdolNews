@@ -1,4 +1,4 @@
-package com.idol.idolnews;
+package com.idol.idolnews.homeMvp;
 
 import android.content.Context;
 import android.widget.ImageView;
@@ -6,8 +6,10 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.chad.library.adapter.base.BaseMultiItemQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.idol.idolnews.entity.LatestDailyEntity;
-import com.idol.idolnews.entity.StoriesEntity;
+import com.idol.idolnews.bean.MultipleItem;
+import com.idol.idolnews.R;
+import com.idol.idolnews.bean.LatestDailyEntity;
+import com.idol.idolnews.bean.StoriesEntity;
 
 import java.util.List;
 
@@ -29,18 +31,10 @@ public class MultipleItemAdapter extends BaseMultiItemQuickAdapter<MultipleItem,
      */
     public MultipleItemAdapter(Context context,List<MultipleItem> data) {
         super(data);
-        addItemType(MultipleItem.IMG,R.layout.item_story_list_content);
+        addItemType(MultipleItem.IMG, R.layout.item_story_list_content);
         addItemType(MultipleItem.TEXT,R.layout.item_story_list_section_head);
     }
-    /*public void setDate(LatestDailyEntity entity){
-        storyList = entity.getStories();
-        imageList = new ArrayList();
-        titleList = new ArrayList();
-        for(int i = 0;i <  storyList.size();i++){
-            imageList.add( storyList.get(i).getImages().get(0));
-            titleList.add( storyList.get(i).getTitle());
-        }
-    }*/
+
 
 
 
